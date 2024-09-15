@@ -22,14 +22,15 @@ public class WeatherFSM {
     // Simulating a single event with a random transition
     public void simulateEvent() {
         Random random = new Random();
-        int transition = random.nextInt(3); // Random numbers: 0, 1, or 2
+        int exclusiveBound = 3;
+        int transition = random.nextInt(exclusiveBound); // Random numbers: 0, 1, or 2
 
         switch (transition) {
             case 0:
                 moveLeft();
                 break;
             case 1:
-                System.out.println("State remains the same: " + currentState);
+                //System.out.println("State remains the same: " + currentState);
                 break;
             case 2:
                 moveRight();
@@ -53,7 +54,8 @@ public class WeatherFSM {
                 currentState = State.RAINING;
                 break;
             default:
-                System.out.println("Cannot move left from " + currentState);
+                //System.out.println("Cannot move left from " + currentState);
+                break;
         }
     }
 
@@ -70,7 +72,8 @@ public class WeatherFSM {
                 currentState = State.SEVERE_WEATHER;
                 break;
             default:
-                System.out.println("Cannot move right from " + currentState);
+                //System.out.println("Cannot move right from " + currentState);
+                break;
         }
     }
 
@@ -89,9 +92,14 @@ public class WeatherFSM {
 
     // Simulating the 7 days with 5 events each day
     public void simulateWeek() {
-        for (int day = 1; day <= 7; day++) {
+        int dayToStart = 1;
+        int dayToEnd = 7;
+        int eventStart = 1;
+        int eventEnd = 5;
+        for (int day = dayToStart; day <= dayToEnd; day++) {
             System.out.println("\nDay " + day + ":");
-            for (int event = 1; event <= 5; event++) {
+            System.out.println("\nStarting state: " + currentState);
+            for (int event = eventStart; event <= eventEnd; event++) {
                 simulateEvent();
             }
         }
