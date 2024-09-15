@@ -14,9 +14,10 @@ Marcos Mendoza
 First, clone the repository to your local machine using Git/Github. After cloning the repository, navigate to the src folder, where the WeatherFSM.java file is located, and double-click to open it with your java supported IDE. Run the program, and you will see the output directly on your terminal or command prompt. The simulation will run for 7 days, with each day consisting of 5 event changes, demonstrating the FSM's behavior with different weather states and events.
 
 ### Run 1:
-![1](https://github.com/user-attachments/assets/88889a7f-87e2-46d5-b8d7-70d852a3a5e9)
-![2](https://github.com/user-attachments/assets/41ad8691-e849-44b5-a640-8f19ca8e64d4)
+![1](https://github.com/user-attachments/assets/fb544285-0b2a-4910-9c90-7698c0b29a15)
+![2](https://github.com/user-attachments/assets/a1d60d0d-5395-4256-898d-3c69c8d29c72)
+
 
 ### Run 2:
-![3](https://github.com/user-attachments/assets/01960718-9e62-4330-b4fe-d985093f0549)
-![4](https://github.com/user-attachments/assets/be2575b5-a84e-44d1-b674-a3dcff831ace)
+![3](https://github.com/user-attachments/assets/c7498e7c-d3d6-4308-88f5-4df3977fd3e0)
+![4](https://github.com/user-attachments/assets/ee1d9aca-4b11-48db-9cc6-670a98804194)
